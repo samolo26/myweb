@@ -1,0 +1,76 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #2c3e50;
+
+    /* Configuración del fondo */
+    background-image: url('v1013-p-0016a.jpg');
+    background-size: cover;         /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center;    /* Centra la imagen en la pantalla */
+    background-repeat: no-repeat;   /* Evita que la imagen se repita */
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.2em;
+    animation: bounce 2s infinite alternate;
+}
+
+p {
+    margin: 0.5em 0 1em;
+    font-size: 1.2em;
+}
+
+/* Estilo para la imagen */
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 1em 0;
+    animation: rotate 10s linear infinite;
+}
+
+/* Enlaces a redes sociales */
+.social-links a {
+    color: #2980b9;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #8e44ad;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10px); }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
